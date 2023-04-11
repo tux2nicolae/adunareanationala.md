@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html >
+<head><meta charset="utf-8">
+<title>Adunarea Națională &quot;Moldova Europeană&quot;</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style id="vuetify-theme-stylesheet">:root {
+      --v-theme-background: 255,255,255;
+      --v-theme-background-overlay-multiplier: 1;
+      --v-theme-surface: 255,255,255;
+      --v-theme-surface-overlay-multiplier: 1;
+      --v-theme-surface-variant: 66,66,66;
+      --v-theme-surface-variant-overlay-multiplier: 2;
+      --v-theme-on-surface-variant: 238,238,238;
+      --v-theme-primary: 98,0,238;
+      --v-theme-primary-overlay-multiplier: 2;
+      --v-theme-primary-darken-1: 55,0,179;
+      --v-theme-primary-darken-1-overlay-multiplier: 2;
+      --v-theme-secondary: 3,218,198;
+      --v-theme-secondary-overlay-multiplier: 1;
+      --v-theme-secondary-darken-1: 1,135,134;
+      --v-theme-secondary-darken-1-overlay-multiplier: 1;
+      --v-theme-error: 176,0,32;
+      --v-theme-error-overlay-multiplier: 2;
+      --v-theme-info: 33,150,243;
+      --v-theme-info-overlay-multiplier: 1;
+      --v-theme-success: 76,175,80;
+      --v-theme-success-overlay-multiplier: 1;
+      --v-theme-warning: 251,140,0;
+      --v-theme-warning-overlay-multiplier: 1;
+      --v-theme-on-background: 0,0,0;
+      --v-theme-on-surface: 0,0,0;
+      --v-theme-on-primary: 255,255,255;
+      --v-theme-on-primary-darken-1: 255,255,255;
+      --v-theme-on-secondary: 0,0,0;
+      --v-theme-on-secondary-darken-1: 255,255,255;
+      --v-theme-on-error: 255,255,255;
+      --v-theme-on-info: 255,255,255;
+      --v-theme-on-success: 255,255,255;
+      --v-theme-on-warning: 255,255,255;
+      --v-border-color: 0, 0, 0;
+      --v-border-opacity: 0.12;
+      --v-high-emphasis-opacity: 0.87;
+      --v-medium-emphasis-opacity: 0.6;
+      --v-disabled-opacity: 0.38;
+      --v-idle-opacity: 0.04;
+      --v-hover-opacity: 0.04;
+      --v-focus-opacity: 0.12;
+      --v-selected-opacity: 0.08;
+      --v-activated-opacity: 0.12;
+      --v-pressed-opacity: 0.12;
+      --v-dragged-opacity: 0.08;
+      --v-theme-kbd: 33, 37, 41;
+      --v-theme-on-kbd: 255, 255, 255;
+      --v-theme-code: 245, 245, 245;
+      --v-theme-on-code: 0, 0, 0;
+    }
+    .v-theme--light {
+      color-scheme: normal;
+      --v-theme-background: 255,255,255;
+      --v-theme-background-overlay-multiplier: 1;
+      --v-theme-surface: 255,255,255;
+      --v-theme-surface-overlay-multiplier: 1;
+      --v-theme-surface-variant: 66,66,66;
+      --v-theme-surface-variant-overlay-multiplier: 2;
+      --v-theme-on-surface-variant: 238,238,238;
+      --v-theme-primary: 98,0,238;
+      --v-theme-primary-overlay-multiplier: 2;
+      --v-theme-primary-darken-1: 55,0,179;
+      --v-theme-primary-darken-1-overlay-multiplier: 2;
+      --v-theme-secondary: 3,218,198;
+      --v-theme-secondary-overlay-multiplier: 1;
+      --v-theme-secondary-darken-1: 1,135,134;
+      --v-theme-secondary-darken-1-overlay-multiplier: 1;
+      --v-theme-error: 176,0,32;
+      --v-theme-error-overlay-multiplier: 2;
+      --v-theme-info: 33,150,243;
+      --v-theme-info-overlay-multiplier: 1;
+      --v-theme-success: 76,175,80;
+      --v-theme-success-overlay-multiplier: 1;
+      --v-theme-warning: 251,140,0;
+      --v-theme-warning-overlay-multiplier: 1;
+      --v-theme-on-background: 0,0,0;
+      --v-theme-on-surface: 0,0,0;
+      --v-theme-on-primary: 255,255,255;
+      --v-theme-on-primary-darken-1: 255,255,255;
+      --v-theme-on-secondary: 0,0,0;
+      --v-theme-on-secondary-darken-1: 255,255,255;
+      --v-theme-on-error: 255,255,255;
+      --v-theme-on-info: 255,255,255;
+      --v-theme-on-success: 255,255,255;
+      --v-theme-on-warning: 255,255,255;
+      --v-border-color: 0, 0, 0;
+      --v-border-opacity: 0.12;
+      --v-high-emphasis-opacity: 0.87;
+      --v-medium-emphasis-opacity: 0.6;
+      --v-disabled-opacity: 0.38;
+      --v-idle-opacity: 0.04;
+      --v-hover-opacity: 0.04;
+      --v-focus-opacity: 0.12;
+      --v-selected-opacity: 0.08;
+      --v-activated-opacity: 0.12;
+      --v-pressed-opacity: 0.12;
+      --v-dragged-opacity: 0.08;
+      --v-theme-kbd: 33, 37, 41;
+      --v-theme-on-kbd: 255, 255, 255;
+      --v-theme-code: 245, 245, 245;
+      --v-theme-on-code: 0, 0, 0;
+    }
+    .v-theme--dark {
+      color-scheme: dark;
+      --v-theme-background: 18,18,18;
+      --v-theme-background-overlay-multiplier: 1;
+      --v-theme-surface: 33,33,33;
+      --v-theme-surface-overlay-multiplier: 1;
+      --v-theme-surface-variant: 189,189,189;
+      --v-theme-surface-variant-overlay-multiplier: 2;
+      --v-theme-on-surface-variant: 66,66,66;
+      --v-theme-primary: 187,134,252;
+      --v-theme-primary-overlay-multiplier: 2;
+      --v-theme-primary-darken-1: 55,0,179;
+      --v-theme-primary-darken-1-overlay-multiplier: 1;
+      --v-theme-secondary: 3,218,197;
+      --v-theme-secondary-overlay-multiplier: 2;
+      --v-theme-secondary-darken-1: 3,218,197;
+      --v-theme-secondary-darken-1-overlay-multiplier: 2;
+      --v-theme-error: 207,102,121;
+      --v-theme-error-overlay-multiplier: 2;
+      --v-theme-info: 33,150,243;
+      --v-theme-info-overlay-multiplier: 2;
+      --v-theme-success: 76,175,80;
+      --v-theme-success-overlay-multiplier: 2;
+      --v-theme-warning: 251,140,0;
+      --v-theme-warning-overlay-multiplier: 2;
+      --v-theme-on-background: 255,255,255;
+      --v-theme-on-surface: 255,255,255;
+      --v-theme-on-primary: 255,255,255;
+      --v-theme-on-primary-darken-1: 255,255,255;
+      --v-theme-on-secondary: 0,0,0;
+      --v-theme-on-secondary-darken-1: 0,0,0;
+      --v-theme-on-error: 255,255,255;
+      --v-theme-on-info: 255,255,255;
+      --v-theme-on-success: 255,255,255;
+      --v-theme-on-warning: 255,255,255;
+      --v-border-color: 255, 255, 255;
+      --v-border-opacity: 0.12;
+      --v-high-emphasis-opacity: 0.87;
+      --v-medium-emphasis-opacity: 0.6;
+      --v-disabled-opacity: 0.38;
+      --v-idle-opacity: 0.1;
+      --v-hover-opacity: 0.04;
+      --v-focus-opacity: 0.12;
+      --v-selected-opacity: 0.08;
+      --v-activated-opacity: 0.12;
+      --v-pressed-opacity: 0.16;
+      --v-dragged-opacity: 0.08;
+      --v-theme-kbd: 33, 37, 41;
+      --v-theme-on-kbd: 255, 255, 255;
+      --v-theme-code: 52, 52, 52;
+      --v-theme-on-code: 204, 204, 204;
+    }
+    .bg-background {
+      --v-theme-overlay-multiplier: var(--v-theme-background-overlay-multiplier);
+      background: rgb(var(--v-theme-background)) !important;
+      color: rgb(var(--v-theme-on-background)) !important;
+    }
+    .bg-surface {
+      --v-theme-overlay-multiplier: var(--v-theme-surface-overlay-multiplier);
+      background: rgb(var(--v-theme-surface)) !important;
+      color: rgb(var(--v-theme-on-surface)) !important;
+    }
+    .bg-surface-variant {
+      --v-theme-overlay-multiplier: var(--v-theme-surface-variant-overlay-multiplier);
+      background: rgb(var(--v-theme-surface-variant)) !important;
+      color: rgb(var(--v-theme-on-surface-variant)) !important;
+    }
+    .bg-primary {
+      --v-theme-overlay-multiplier: var(--v-theme-primary-overlay-multiplier);
+      background: rgb(var(--v-theme-primary)) !important;
+      color: rgb(var(--v-theme-on-primary)) !important;
+    }
+    .bg-primary-darken-1 {
+      --v-theme-overlay-multiplier: var(--v-theme-primary-darken-1-overlay-multiplier);
+      background: rgb(var(--v-theme-primary-darken-1)) !important;
+      color: rgb(var(--v-theme-on-primary-darken-1)) !important;
+    }
+    .bg-secondary {
+      --v-theme-overlay-multiplier: var(--v-theme-secondary-overlay-multiplier);
+      background: rgb(var(--v-theme-secondary)) !important;
+      color: rgb(var(--v-theme-on-secondary)) !important;
+    }
+    .bg-secondary-darken-1 {
+      --v-theme-overlay-multiplier: var(--v-theme-secondary-darken-1-overlay-multiplier);
+      background: rgb(var(--v-theme-secondary-darken-1)) !important;
+      color: rgb(var(--v-theme-on-secondary-darken-1)) !important;
+    }
+    .bg-error {
+      --v-theme-overlay-multiplier: var(--v-theme-error-overlay-multiplier);
+      background: rgb(var(--v-theme-error)) !important;
+      color: rgb(var(--v-theme-on-error)) !important;
+    }
+    .bg-info {
+      --v-theme-overlay-multiplier: var(--v-theme-info-overlay-multiplier);
+      background: rgb(var(--v-theme-info)) !important;
+      color: rgb(var(--v-theme-on-info)) !important;
+    }
+    .bg-success {
+      --v-theme-overlay-multiplier: var(--v-theme-success-overlay-multiplier);
+      background: rgb(var(--v-theme-success)) !important;
+      color: rgb(var(--v-theme-on-success)) !important;
+    }
+    .bg-warning {
+      --v-theme-overlay-multiplier: var(--v-theme-warning-overlay-multiplier);
+      background: rgb(var(--v-theme-warning)) !important;
+      color: rgb(var(--v-theme-on-warning)) !important;
+    }
+    .text-background {
+      color: rgb(var(--v-theme-background)) !important;
+    }
+    .border-background {
+      --v-border-color: var(--v-theme-background);
+    }
+    .text-surface {
+      color: rgb(var(--v-theme-surface)) !important;
+    }
+    .border-surface {
+      --v-border-color: var(--v-theme-surface);
+    }
+    .text-surface-variant {
+      color: rgb(var(--v-theme-surface-variant)) !important;
+    }
+    .border-surface-variant {
+      --v-border-color: var(--v-theme-surface-variant);
+    }
+    .on-surface-variant {
+      color: rgb(var(--v-theme-on-surface-variant)) !important;
+    }
+    .text-primary {
+      color: rgb(var(--v-theme-primary)) !important;
+    }
+    .border-primary {
+      --v-border-color: var(--v-theme-primary);
+    }
+    .text-primary-darken-1 {
+      color: rgb(var(--v-theme-primary-darken-1)) !important;
+    }
+    .border-primary-darken-1 {
+      --v-border-color: var(--v-theme-primary-darken-1);
+    }
+    .text-secondary {
+      color: rgb(var(--v-theme-secondary)) !important;
+    }
+    .border-secondary {
+      --v-border-color: var(--v-theme-secondary);
+    }
+    .text-secondary-darken-1 {
+      color: rgb(var(--v-theme-secondary-darken-1)) !important;
+    }
+    .border-secondary-darken-1 {
+      --v-border-color: var(--v-theme-secondary-darken-1);
+    }
+    .text-error {
+      color: rgb(var(--v-theme-error)) !important;
+    }
+    .border-error {
+      --v-border-color: var(--v-theme-error);
+    }
+    .text-info {
+      color: rgb(var(--v-theme-info)) !important;
+    }
+    .border-info {
+      --v-border-color: var(--v-theme-info);
+    }
+    .text-success {
+      color: rgb(var(--v-theme-success)) !important;
+    }
+    .border-success {
+      --v-border-color: var(--v-theme-success);
+    }
+    .text-warning {
+      color: rgb(var(--v-theme-warning)) !important;
+    }
+    .border-warning {
+      --v-border-color: var(--v-theme-warning);
+    }
+    .on-background {
+      color: rgb(var(--v-theme-on-background)) !important;
+    }
+    .on-surface {
+      color: rgb(var(--v-theme-on-surface)) !important;
+    }
+    .on-primary {
+      color: rgb(var(--v-theme-on-primary)) !important;
+    }
+    .on-primary-darken-1 {
+      color: rgb(var(--v-theme-on-primary-darken-1)) !important;
+    }
+    .on-secondary {
+      color: rgb(var(--v-theme-on-secondary)) !important;
+    }
+    .on-secondary-darken-1 {
+      color: rgb(var(--v-theme-on-secondary-darken-1)) !important;
+    }
+    .on-error {
+      color: rgb(var(--v-theme-on-error)) !important;
+    }
+    .on-info {
+      color: rgb(var(--v-theme-on-info)) !important;
+    }
+    .on-success {
+      color: rgb(var(--v-theme-on-success)) !important;
+    }
+    .on-warning {
+      color: rgb(var(--v-theme-on-warning)) !important;
+    }
+</style>
+<meta name="description" content="Adunarea Națională &quot;Moldova Europeană&quot; va avea loc pe 21 mai, în Piața Marii Adunării Naționale din Chișinău."><link rel="preload" as="fetch" crossorigin="anonymous" href="/_payload.js"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/entry.bff2d927.js"><link rel="preload" as="style" href="/_nuxt/entry.8b9b7096.css"><link rel="prefetch" as="script" crossorigin href="/_nuxt/error-component.01fe9d92.js"><link rel="stylesheet" href="/_nuxt/entry.8b9b7096.css"></head>
+<body ><div id="__nuxt"><div class="v-application v-theme--light v-layout v-layout--full-height v-locale--is-ltr" style="z-index:1000;"><div class="v-application__wrap"><!--[--><main class="v-main" style="--v-layout-left:0px;--v-layout-right:0px;--v-layout-top:0px;--v-layout-bottom:0px;transition:none !important;"><!--[--><div class="v-container"><div class="v-row"><div class="v-col"><h1 class="text-center">Adunarea Nationala Moldova Europeană</h1></div></div><div class="v-row"><div class="v-col"><h2 class="text-center"> 21 Mai, Piața Marii Adunării Naționale din Chișinău </h2></div></div><div class="v-row"><div class="v-col"><p> Dragi cetățeni, <br><br> Moldova se află în prezent într-un moment de răspântie. Ce se va întâmpla cu țara noastră și cu viitorul copiilor noștri depinde acum de puterea poporului nostru de a spune lumii clar ce vrem. Este decisiv să ne ținem împreună pe aceeași cale și s-o spunem fără ocolișuri - Moldova va izbuti! <br><br> Moldova, la fel ca alte țări europene, plătește un preț enorm pentru războiul fără sens declanșat de Rusia în Ucraina. De mai mult de un an, tinerii mor pe câmpurile unde anii trecuți creștea grâu. Sute de mii de oameni nevinovați sunt loviți de bombe, în casele lor, unde acum doi ani își duceau viața lor obișnuită, cu grijile și bucuriile zilnice. Milioane de oameni au pierdut tot ce aveau, tot ce au agonisit o viață întreagă, și sunt în pribegie. <br><br> Rusia continuă un război inuman împotriva unui vecin pașnic. Și încearcă să slăbească unitatea Europei și hotărârea cu care țările europene se opun nedreptății și crimelor. Șantajul Kremlinului a dus la creșterea prețurilor la energie pentru toți, iar din această cauză au crescut prețurile la toate produsele și serviciile. Viața fiecărui om a devenit mai complicată, mai scumpă și mai neliniștită după 24 februarie 2022. <br><br> În tot acest timp, în care moldovenii muncesc din răsputeri pentru a avea grijă cu demnitate de familiile lor și pentru a rămâne liberi, încă avem în țara noastră persoane care ne amenință cu războiul. În tot acest timp, noi toți, alături de Guvern, de majoritatea parlamentară, am făcut totul pentru a proteja oamenii, am acționat previzibil, disciplinat și cu înțelepciune ca să asigurăm pacea și stabilitatea în țara noastră. Un rol important l-au avut și îl au adevărații patrioți din instituțiile de forță, care și-au făcut datoria și și-au respectat jurământul dat poporului. Un rol mare l-au avut prietenii noștri externi care ne-au ajutat și au dat de înțeles că sunt gata să ne protejeze de orice amenințare. <br><br> Timpul a demonstrat că am ales calea cea dreaptă, iar cei care visau să destabilizeze situația în Moldova au eșuat. Poporul nostru este înțelept și nu a călcat în capcana întinsă de cel viclean. <br><br> În același timp, banii murdari, care finanțează încercările de destabilizare, continuă să curgă. Sunt persoane fără minte în Moldova care se uită la ce se întâmplă în Ucraina și se bucură de crimele de acolo. Care văd ororile din Bahmut, Bucea, Mariupol, Herson și spun că ai lor sunt aproape. Acești oameni care și-au vândut țara sunt gata acum să vadă satele și orașele noastre făcute una cu pământul numai pentru ca ei să poată reveni la putere. Sunt gata să vadă casa părintească lovită de bombe, numai ca ei să mai fure miliarde. <br><br> O grupare de hoți, plătită cu bani murdari, și-a pus în plan să blocheze calea noastră europeană, drumul nostru spre pace și bunăstare. Aceleași personaje au ținut Moldova blocată în sărăcie și corupție, iar acum o atacă otrăvind sufletele oamenilor noștri, prin ceartă și dezbinare. Aceiași bani murdari corup diverse persoane pentru a nu permite curățarea justiției. Aceiași bani finanțează așa-numitele proteste. S-ar părea, dintr-o parte, că aceste grupări care vor să ne fure libertatea, care vor să ne blocheze viitorul, care vor să ne distrugă pacea și buna înțelegere, țipă mai tare decât se aude vocea poporului. Sute de mii de oameni se uită cum o mână de corupți plănuiesc să fure viitorul copiilor noștri. <br><br> Europa e cu ochii pe noi. Întreaga lume e cu ochii pe noi. <br><br> Mulți au impresia greșită că cetățenii Republicii Moldova privesc cu nepăsare la ceea ce se întâmplă. Mulți cred, în mod eronat, că cetățenii țării noastre sunt indiferenți și nu iau atitudine. Unii încă își pun întrebarea dacă poporul nostru își dorește cu adevărat aderarea la Uniunea Europeană. <br><br> Eu vă propun să le răspundem. <br><br> Eu vă îndemn să ne manifestăm, ca popor, decizia clară de a fi parte a familiei europene, bazată pe respect, stabilitate și colaborare economică. Eu vă îndemn să arătăm că unicul stăpân al acestui pământ este poporul Republicii Moldova. Eu vă îndemn să le explicăm, celor care mai au dubii, că deciziile privind viitorul Republicii Moldova se iau în Republica Moldova. <br><br> A venit timpul ca moldovenii să arate că suntem un popor hotărât, un popor stăpân în casa lui, un popor care își poate apăra cu fruntea sus democrația, pacea și comunitățile. <br><br> Eu cred că a venit timpul ca cei care sunt cu ochii pe noi, și din est și din vest, să vadă că, în clipele hotărâtoare pentru destinul nostru, suntem uniți și curajoși. <br><br> Vă anunț că am lansat inițiativa de a convoca la Chișinău o adunare a cetățenilor în care să spunem lumii că noi suntem europeni și că aceasta e calea aleasă de noi. Să dăm răspuns celor care întreabă ce vor moldovenii. Un răspuns răspicat și clar. Să se audă vocea noastră, a celor mulți, vocea poporului nostru. <br><br> Adunarea națională Moldova Europeană va fi organizată la 21 mai, în Piața Marii Adunări Naționale. Vocea fiecăruia va cimenta calea noastră europeană. Vin cu un îndemn către toți - oameni care lucrează pământul, profesori, studenți, organizații neguvernamentale, antreprenori, medici, oameni de cultură, angajați în sectorul privat, funcționari publici - împreună să sprijinim visul nostru comun. Să demonstrăm că noi vrem pace. Vrem ca Uniunea Europeană să fie la noi acasă. Așa cum ne-am adunat când am cerut independența și am obținut-o. Așa cum ne-am adunat și ne-am apărat democrația și am rezistat în cele mai grele timpuri. Așa să ne adunăm și acum. <br><br> Voi discuta în perioada imediat următoare cu forțele politice proeuropene, cu societatea civilă, mediul academic, cu personalitățile țării noastre detalii legate de acest eveniment, dar, în primul rând, am vrut să mă adresez direct oamenilor. Chiar dacă avem anumite supărări, chiar dacă uneori avem păreri diferite, acum nu e momentul de ceartă și dezbinare. Acum e momentul să ne unim și să devenim împreună parte a familiei europene. Vin cu acest îndemn, pentru că în momentele cruciale deciziile mari nu se iau doar de politicieni. Deciziile mari se iau de oameni în Piața Marii Adunări Naționale. <br> Suntem la o mare răscruce. Ce facem acum va influența viețile noastre, ale copiilor noștri și ale copiilor copiilor noștri. Generațiile viitoare vor privi cum ne-am comportat în aceste vremuri și vor întreba - ce am făcut noi pentru a ne apăra țara. Ce am făcut pentru a fi parte din lumea civilizată care rezolvă problemele fără război? Ce am făcut pentru generațiile viitoare pentru a le păzi de năpastă? Cum ne-am adunat și am decis că soarta copiilor noștri va fi un viitor în pace, bună înțelegere și bunăstare? <br><br> La 21 mai 2023 ne vom aduna să răspundem împreună la aceste întrebări. <br><br> Vă aștept la Adunarea națională Moldova Europeană. </p></div></div><div class="v-row"><div class="v-col"><a class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default rounded-md v-btn--size-default v-btn--variant-elevated mx-auto" style="" href="https://www.presedinte.md/rom/discursuri/mesajul-presedintei-maia-sandu-catre-cetateni-cu-privire-la-convocarea-adunarii-nationale-moldova-europeana-in-data-de-21-mai"><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><!----><span class="v-btn__content" data-no-activator><!--[-->Declarația Președintei<!--]--></span><!----><!----></a></div></div></div><!--]--></main><!--]--></div></div></div><script type="module">import p from "/_payload.js";window.__NUXT__={...p,...({state:{},_errors:{},serverRendered:true,prerenderedAt:1681243603256,config:{public:{},app:{baseURL:"\u002F",buildAssetsDir:"\u002F_nuxt\u002F",cdnURL:""}}})}</script><script type="module" src="/_nuxt/entry.bff2d927.js" crossorigin></script></body>
+</html>
